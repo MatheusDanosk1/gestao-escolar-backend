@@ -1,10 +1,4 @@
-from rest_framework import viewsets
-from .models import Aluno
-from .serializers import AlunoSerializer
 
-class AlunoViewSet(viewsets.ModelViewSet):
-    queryset = Aluno.objects.all()
-    serializer_class = AlunoSerializer
 
 from .models import Professor
 from .serializers import ProfessorSerializer
@@ -27,3 +21,11 @@ from .serializers import NotaSerializer
 class NotaViewSet(viewsets.ModelViewSet):
     queryset = Nota.objects.all()
     serializer_class = NotaSerializer
+
+from rest_framework import viewsets
+from .models import Aluno
+from .serializers import AlunoSerializer
+
+class AlunoViewSet(viewsets.ModelViewSet):
+    queryset = Aluno.objects.all()
+    serializer_class = AlunoSerializer
