@@ -28,3 +28,9 @@ class NotaViewSet(viewsets.ModelViewSet):
     queryset = Nota.objects.all()
     serializer_class = NotaSerializer
 
+from .models import Turma
+from .serializers import TurmaSerializer
+
+class TurmaViewSet(viewsets.ModelViewSet):
+    queryset = Turma.objects.all()
+    serializer_class = TurmaSerializer
