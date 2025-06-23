@@ -32,5 +32,6 @@ from .models import Turma
 from .serializers import TurmaSerializer
 
 class TurmaViewSet(viewsets.ModelViewSet):
-    queryset = Turma.objects.all()
     serializer_class = TurmaSerializer
+    queryset = Turma.objects.all()
+    
