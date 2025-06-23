@@ -1,4 +1,10 @@
+from rest_framework import serializers
+from .models import Aluno
 
+class AlunoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Aluno
+        fields = '__all__'
 
 from .models import Professor
 from rest_framework import serializers
@@ -23,10 +29,3 @@ class NotaSerializer(serializers.ModelSerializer):
         model = Nota
         fields = '__all__'
 
-from rest_framework import serializers
-from .models import Aluno
-
-class AlunoSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Aluno
-        fields = '__all__'
