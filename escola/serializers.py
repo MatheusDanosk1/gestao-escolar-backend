@@ -29,3 +29,10 @@ class NotaSerializer(serializers.ModelSerializer):
         model = Nota
         fields = '__all__'
 
+from .models import Turma
+
+class TurmaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Turma
+        fields = '__all__'
+
